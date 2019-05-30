@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="slot-control">
+        <div style="clear:left; padding:5px 10px; background: #eaeaea; margin-bottom: 25px;">
+            <input type="range" name="" id="slide" min="0" max="25000" value="0" style="width:100%;">
+        </div>
+
+        <div class="divide"></div>
+
+        <button id="btn_spin" class="btn">หมุน</button>
+
+        <div class="divide"></div>
+        
+        <strong>ใส่ตัวเลขแล้วกดปุ่มหยุด</strong>
+        <input type="number" name="" id="stop_number" max="25000"><button id="btn_stop" class="btn">หมุนไปที่เลข</button>
+            <!-- <button>Watch</button> -->
+
+
+        <div class="divide"></div>
+        <input type="text" name="" id="device_ip" placeholder="ip เครื่อง server"> <br> <span style="font-size: 12px ; color: #666;">example : 192.168.0.0</span> <br><br>
+        <button class="btn" id="btn_watch_device">รับค่าจากอุปกรณ์</button>
+    </div>
+
+    <div class="slot-object" >
+        <div class="slot-wrapper">
+            <div id="slot-0" class="slot">
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/0.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/1.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/2.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/3.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/4.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/5.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/6.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/7.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/8.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/9.png" alt="" />
+                </div>
+            </div>
+            <div id="slot-1" class="slot">
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/0.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/1.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/2.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/3.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/4.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/5.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/6.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/7.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/8.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/9.png" alt="" />
+                </div>
+            </div>
+            <div id="slot-comma" class="slot slot-sm">
+                <div class="slot-item-wrapper">
+                    <img src="" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/comma.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/comma.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/comma.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/comma.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/comma.png" alt="" />
+                </div>
+            </div>
+            <div id="slot-2" class="slot">
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/0.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/1.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/2.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/3.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/4.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/5.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/6.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/7.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/8.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/9.png" alt="" />
+                </div>
+            </div>
+            <div id="slot-3" class="slot">
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/0.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/1.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/2.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/3.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/4.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/5.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/6.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/7.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/8.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/9.png" alt="" />
+                </div>
+            </div>
+            <div id="slot-4" class="slot">
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/0.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/1.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/2.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/3.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/4.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/5.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/6.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/7.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/8.png" alt="" />
+                </div>
+                <div class="slot-item-wrapper">
+                    <img src="assets/img/9.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="slot-skin" id="skin">
+            <img src="assets/img/skin-sprite.png" alt="">
+        </div>
+        <div class="slot-skin slot-skin-light" id="skin-light">
+            <img src="assets/img/skin-light-sprite-compress.png" alt="">
+        </div>
+        <div class="slot-skin slot-skin-circle" id="skin-circle">
+            <img src="assets/img/skin-circle.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="assets/js/lib/jquery/jquery.3.1.1.min.js"></script>
+    <script src="assets/js/lib/greensock/TweenMax.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
